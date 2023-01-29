@@ -4,27 +4,148 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="bootstrap.min.css">
+
+        <script src="jquery-3.3.1.slim.min.js"></script>
+
+        <script src="bootstrap.bundle.min.js"></script>   
+
         <title>Inicio</title>
     </head>
     <body>
 
-        <header>
-            <div class="nav">
+        <!-- Demo header-->
+        <section class="py-5 header">
+            <div class="container py-4">
+                <header class="text-center mb-5  text-white">
+                    <h1 class="display-4">Hola! Soy Jorge</h1>
+                    <p class="font-italic ">Programador Web.</p>
+                    </p>
+                </header>
 
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- Tabs nav -->
+                        <div class="nav flex-column nav-pills nav-pills-custom"
+                            id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <a class="nav-link mb-3 p-3 shadow active"
+                                id="v-pills-sobremi-tab" data-toggle="pill"
+                                href="#v-pills-sobremi" role="tab"
+                                aria-controls="v-pills-sobremi"
+                                aria-selected="true">
+                                <i class="fa fa-user-circle-o mr-2"></i>
+                                <span class="font-weight-bold small
+                                    text-uppercase">Sobre mi</span></a>
+
+                            <a class="nav-link mb-3 p-3 shadow"
+                                id="v-pills-conocimientos-tab"
+                                data-toggle="pill" href="#v-pills-conocimientos"
+                                role="tab" aria-controls="v-pills-conocimientos"
+                                aria-selected="false">
+                                <i class="fa fa-calendar-minus-o mr-2"></i>
+                                <span class="font-weight-bold small
+                                    text-uppercase">Conocimientos</span></a>
+                            
+                            <a class="nav-link mb-3 p-3 shadow"
+                                id="v-pills-proyectos-tab" data-toggle="pill"
+                                href="#v-pills-proyectos" role="tab"
+                                aria-controls="v-pills-proyectos"
+                                aria-selected="false">
+                                <i class="fa fa-star mr-2"></i>
+                                <span class="font-weight-bold small
+                                    text-uppercase">Proyectos</span></a>
+
+                            <a class="nav-link mb-3 p-3 shadow"
+                                id="v-pills-contacto-tab" data-toggle="pill"
+                                href="#v-pills-contacto" role="tab"
+                                aria-controls="v-pills-contacto"
+                                aria-selected="false">
+                                <i class="fa fa-check mr-2"></i>
+                                <span class="font-weight-bold small
+                                    text-uppercase">Contacto</span></a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-9">
+                        <!-- Tabs content -->
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade shadow rounded bg-white
+                                show active p-5" id="v-pills-sobremi"
+                                role="tabpanel"
+                                aria-labelledby="v-pills-sobremi-tab">
+                                <div class="persona row align-items-center ">
+                                    <div class="col d-flex
+                                        justify-content-center
+                                        align-self-center">
+                                        <img src="a.png" alt="Mi foto"
+                                            class="w-75 ">
+                                    </div>
+                                    <div class="col">
+                                        <h4 class="font-italic mb-4">Sobre mi..</h4>
+                                        <p class="font-italic text-muted mb-2">Mi nombre es Jorge Alberto y soy estudiante de la Universidad de Guadalajara, actualmente estoy en la carrera de Ingenieria Informatica en mi 5to semestre</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade shadow rounded bg-white
+                                p-5" id="v-pills-conocimientos"
+                                role="tabpanel"
+                                aria-labelledby="v-pills-conocimientos-tab">
+                                <h4 class="mb-4">Conocimientos</h4>
+                                <p class=" text-muted mb-2">Actualmente se manejar los siguientes lenguajes de programacion: </p>
+                                <ul>
+                                    <li>C</li>
+                                    <li>C++</li>
+                                    <li>C#</li>
+                                    <li>Python</li>
+                                </ul>
+
+                            </div>
+
+
+                            <div class="tab-pane fade shadow rounded bg-white
+                                p-5 " id="v-pills-proyectos"
+                                role="tabpanel"
+                                aria-labelledby="v-pills-proyectos-tab">
+                                <h4 class="mb-4">Proyectos</h4>
+                                <p class=" text-muted mb-2">Actualmente se manejar los siguientes lenguajes de programacion: </p>
+                                <ul>
+                                    <li>C</li>
+                                    <li>C++</li>
+                                    <li>C#</li>
+                                    <li>Python</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="tab-pane fade shadow rounded bg-white
+                                p-5" id="v-pills-contacto" role="tabpanel"
+                                aria-labelledby="v-pills-contacto-tab">
+                                <h4 class="font-italic mb-4">Confirm booking</h4>
+                                <p class="font-italic text-muted mb-2">Lorem
+                                    ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure
+                                    dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt
+                                    mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </header>
-
-        <!--CONTENEDOR-->
-        <div class="container">
-            <div class="rown">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Maiores recusandae magni assumenda, consectetur quas et
-                    fugit cumque aliquam molestias nulla rem repellat modi?
-                    Architecto reprehenderit, facilis corrupti quaerat delectus
-                    ipsum!</p>
-            </div>
-        </div>
-
+        </section>
 
     </body>
 </html>
