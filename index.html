@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="style.css">
 
@@ -13,6 +16,10 @@
         <script src="jquery-3.3.1.slim.min.js"></script>
 
         <script src="bootstrap.bundle.min.js"></script>   
+
+        <link rel="stylesheet" href="all.min.css">
+
+
 
         <title>Inicio</title>
     </head>
@@ -114,32 +121,120 @@
                                 role="tabpanel"
                                 aria-labelledby="v-pills-proyectos-tab">
                                 <h4 class="mb-4">Proyectos</h4>
-                                <p class=" text-muted mb-2">Actualmente se manejar los siguientes lenguajes de programacion: </p>
-                                <ul>
-                                    <li>C</li>
-                                    <li>C++</li>
-                                    <li>C#</li>
-                                    <li>Python</li>
-                                </ul>
+                                <p class=" text-muted mb-5">He participado en los siguientes proyectos: </p>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-14">
+                                            <div class="tab" role="tabpanel">
+                                                <!-- Nav tabs -->
+                                                <ul class="nav nav-tabs" role="tablist">
+                                                    <li  class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Resident Manager</a></li>
+                                                    <li ><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Sistema Minisuper</a></li>
+                                                    <li ><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Psy-Connection</a></li>
+                                                </ul>
+                                                <!-- Tab panes -->
+                                                <div class="tab-content tabs">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                                                        <div class="row align-items-center">
+                                                            <div class="col justify-content-center
+                                                            align-self-center">
+                                                              <img src="Logo2.jpeg" alt="LogoRm " class=" w-75 ">
+                                                            </div>
+                                                            <div class="col">
+                                                              <p> <b>Resident Manager</b>  fue un proyecto donde se realizo un sistema de administracion para un coto privado, sus funciones principales fueron:</p>
+                                                              <ul>
+                                                                <li class="d-flex justify-content-center
+                                                                align-self-center" >Inicio de Sesion</li>
+                                                                <li class="d-flex justify-content-center
+                                                                align-self-center" >Alta/Bajas de personal</li>
+                                                                <li class="d-flex justify-content-center
+                                                                align-self-center" >Alta/Bajas de Residentes</li>
+                                                                <li class="d-flex justify-content-center
+                                                                align-self-center" >Gestion de pagos</li>
+                                                                <li class="d-flex justify-content-center
+                                                                align-self-center" >Busqueda de Residentes</li>
+                                                              </ul>
+                                                            </div>
+                                                          </div>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane fade" id="Section2">                                
+                                                            <div class="row align-items-center">
+                                                                <div class="col justify-content-center
+                                                                align-self-center">
+                                                                  <img src="POS.png" alt="LogoRm " class=" w-75 ">
+                                                                </div>
+                                                                <div class="col">
+                                                                  <p> <b>Sistema Minisuper</b> Fue un proyecto realizado a peticion de un cliente que cuenta con una tienda con un amplio surtido de productos, en su evolucion por modernizar y hacer mas facil su trabajo pidio que tuviera las siguientes funciones:</p>
+                                                                  <ul>
+                                                                    <li class="d-flex justify-content-center
+                                                                    align-self-center" >Inicio de sesion</li>
+                                                                    <li class="d-flex justify-content-center
+                                                                    align-self-center" >Alta/Bajas de productos</li>
+                                                                    <li class="d-flex justify-content-center
+                                                                    align-self-center" >Alta/Bajas de categorias</li>
+                                                                    <li class="d-flex justify-content-center
+                                                                    align-self-center" >Generador de diversos reportes</li>
+                                                                    <li class="d-flex justify-content-center
+                                                                    align-self-center" >Generador de tickets</li>
+                                                                    <li class="d-flex justify-content-center
+                                                                    align-self-center" >Entre muchas funciones mas</li>
+                                                                  </ul>
+                                                                </div>
+                                                              </div>  
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane fade" id="Section3">
+                                                        <div class="row align-items-center">
+                                                            <div class="col justify-content-center
+                                                            align-self-center">
+                                                              <img src="psy.jpeg" alt="LogoRm " class=" w-75 ">
+                                                            </div>
+                                                            <div class="col">
+                                                              <p> <b>Psy-Connection</b> Es un proyecto que esta dirigido a estudiantes y practicantes del area de psicologia, es un servicio gratuito donde los usuarios podran obtener consultas y tendran la posibilidad de agregar feedback acerca de su experiencia que servira para los tutores de los mismos practicantes sus principales funciones son:</p>
+                                                              <ul>
+                                                                <li class="d-flex justify-content-center
+                                                                align-self-center" >Inicio de sesion</li>
+                                                                <li class="d-flex justify-content-center
+                                                                align-self-center" >Posibilidad de agendar cita en linea</li>
+                                                                <li class="d-flex justify-content-center
+                                                                align-self-center" >Posibilidad de agendar cita de manera presencial</li>
+                                                                <li class="d-flex justify-content-center
+                                                                align-self-center" >Posibilidad de agregar una "review"</li>
+                                                                <li class="d-flex justify-content-center
+                                                                align-self-center" >Entre muchas funciones mas</li>
+                                                              </ul>
+                                                            </div>
+                                                          </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
 
                             <div class="tab-pane fade shadow rounded bg-white
                                 p-5" id="v-pills-contacto" role="tabpanel"
                                 aria-labelledby="v-pills-contacto-tab">
-                                <h4 class="font-italic mb-4">Confirm booking</h4>
-                                <p class="font-italic text-muted mb-2">Lorem
-                                    ipsum dolor sit amet, consectetur
-                                    adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure
-                                    dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.</p>
+                                <h4 class="font-italic mb-4">Contacto</h4>
+                                <p class="font-italic text-muted mb-2"> Puedes contactarme a traves de mi correo electronico: <a href="mailto:alberto09@live.com.mx?
+                                    cc=gfg@gmail.com&
+                                    bcc=geeks@gmail.com
+                                    &subject=Contacto
+                                    &body=Asunto">
+                                    Enlace a correo electrónico
+                                </a> </p>
+                                <p>O a traves de mis redes sociales las cuales son: </p>
+                                <div class="social pt-3 ">
+                                    <div class="social-icons">
+                                        <a href=""><i class="fab fa-facebook"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                        <a href=""><i class="fab fa-twitch"></i></a>
+                                        <a href=""><i class="fab fa-stack-overflow"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
