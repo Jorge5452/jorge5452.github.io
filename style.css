@@ -65,15 +65,17 @@ body {
     opacity: 1;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 360px) {
 
     .persona {
-        display: inline-block;
+        display: flex;
+
     }
 
     .persona img {
         padding-bottom: 25px;
     }
+
 
 }
 
